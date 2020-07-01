@@ -10,7 +10,7 @@ app.get("/survey", function(req, res) {
 
 })
 
-// Routes user to homepage (Fallback)
+// Defualt route that loads to home page.
 app.use(function(req, res) {
     res.sendFile(path.join(__dirname, "/app/public/home.html"));
 })
